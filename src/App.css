@@ -1,0 +1,49 @@
+html, body, #root, .wrapper{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    background-color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    width: 95%;
+    height: 95%;
+
+    background-color: bisque;
+
+    display: grid;
+    grid-template-rows: 75px 1fr 50px;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+.ghead, .gsection, .garticle, .gaside, .gfooter {
+    width: 100%;
+    height: 100%;
+
+    border: ridge 4px goldenrod;
+    box-sizing: border-box;
+}
+.ghead{
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
+}
+.gsection{
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+.garticle{
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+.gaside{
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+}
+.gfooter{
+    grid-row: 3 / 4;
+    grid-column: 1 / 4;
+}
